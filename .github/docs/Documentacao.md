@@ -12,4 +12,6 @@
   rails generate model genre name:string
   rails db:migrate
 
+  rails generate model director name nationality birth_date:date genre:references
+  rails db:migrate
 ```
