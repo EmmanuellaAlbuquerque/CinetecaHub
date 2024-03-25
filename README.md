@@ -1,11 +1,13 @@
-# README
+# CinetecaHub
+> Aplicação de catálogo de filmes
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: Ruby 3.0.0
+* Rails version: Rails 7.1.3.2 
 
 * System dependencies
 

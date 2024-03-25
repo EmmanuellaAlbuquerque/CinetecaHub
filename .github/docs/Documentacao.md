@@ -5,6 +5,11 @@
   rails new CinetecaHub
   cd CinetecaHub
 
-
+  rails server
 ```
 
+```sh
+  rails generate model genre name:string
+  rails db:migrate
+
+```
