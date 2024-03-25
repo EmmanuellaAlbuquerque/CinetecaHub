@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  year_of_release: 2024-03-25
+  synopsis: MyString
+  made_in: MyString
+  duration: 1
+  genre: one
+  director: one
+
+two:
+  title: MyString
+  year_of_release: 2024-03-25
+  synopsis: MyString
+  made_in: MyString
+  duration: 1
+  genre: two
+  director: two
