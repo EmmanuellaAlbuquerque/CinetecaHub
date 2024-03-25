@@ -18,3 +18,9 @@
   rails gererate model movie title year_of_release:date synopsis made_in duration:integer genre:references director:references
   rails db:migrate
 ```
+
+```sh
+  rails routes -g genres
+  rails routes -g directors
+  rails routes -g movies
+```
