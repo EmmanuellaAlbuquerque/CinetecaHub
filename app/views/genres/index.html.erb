@@ -1,0 +1,6 @@
+<h1>Listando os Gêneros</h1>
+
+<% @genres.each do | genre | %>
+  <%= genre.name %>
+  <%= link_to 'Editar', edit_genre_path(genre), method: :put %>
+<% end %>

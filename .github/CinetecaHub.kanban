@@ -1,0 +1,110 @@
+{
+  "lists": [
+    {
+      "id": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+      "title": "🗃️ Backlog",
+      "cards": [
+        {
+          "id": "557b4c8c-0103-488a-b685-dca8469f440e",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "05 - cadastrar e editar filmes",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "44584d9e-e301-4fda-ae14-d455d131bf54",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "06 - ao entrar na tela de detalhes de um gênero, - ver todos os filmes deste gênero",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "54426f24-eba7-4977-a2a3-fec8b0ba9f0a",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "07 - ver uma listagem de todos os diretores",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "6e5c0cee-ba6c-45d2-8225-e7ef3a1da110",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "08 - ver uma listagem com todos os filmes, exibindo somente o título e o ano de lançamento",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "0e3d8d05-169d-4f0a-b220-4770e0c137b9",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "09 - ao clicar em um filme da listagem, ver todos os detalhes deste filme",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
+      "title": "🛠️👩🏻‍💻 Doing",
+      "cards": [
+        {
+          "id": "6f046b6b-11ed-4a7d-81cd-22c5e0ea6943",
+          "listId": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
+          "title": "04 - cadastrar e editar diretores",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "7323942c-31a0-4413-9dcd-655ed4605681",
+      "title": "✅ Done",
+      "cards": [
+        {
+          "id": "93aeacc1-c7d2-4d43-a676-e5c5854b9200",
+          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
+          "title": "03 - ver uma listagem de todos os gêneros",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "b2a386e7-86e8-4baf-96a2-fa8404d0919f",
+          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
+          "title": "02 - cadastrar e editar gêneros de filmes",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "c043c914-7be8-450a-b4d7-bd7b359a5a03",
+          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
+          "title": "01 - criar modelos da aplicação - (Models)",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    }
+  ],
+  "archive": {
+    "lists": [],
+    "cards": []
+  },
+  "settings": {
+    "labels": []
+  }
+}
