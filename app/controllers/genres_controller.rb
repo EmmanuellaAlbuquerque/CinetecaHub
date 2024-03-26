@@ -30,4 +30,9 @@ class GenresController < ApplicationController
 
     render :edit
   end
+
+  def show
+    @genre = Genre.find(params[:id])
+    @movies = @genre.movies
+  end
 end
