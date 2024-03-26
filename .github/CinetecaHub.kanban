@@ -5,27 +5,9 @@
       "title": "🗃️ Backlog",
       "cards": [
         {
-          "id": "557b4c8c-0103-488a-b685-dca8469f440e",
-          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
-          "title": "05 - cadastrar e editar filmes",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
           "id": "44584d9e-e301-4fda-ae14-d455d131bf54",
           "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
-          "title": "06 - ao entrar na tela de detalhes de um gênero, - ver todos os filmes deste gênero",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "54426f24-eba7-4977-a2a3-fec8b0ba9f0a",
-          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
-          "title": "07 - ver uma listagem de todos os diretores",
+          "title": "07 - ao entrar na tela de detalhes de um gênero, - ver todos os filmes deste gênero",
           "description": "",
           "labels": [],
           "checkboxes": [],
@@ -56,9 +38,9 @@
       "title": "🛠️👩🏻‍💻 Doing",
       "cards": [
         {
-          "id": "6f046b6b-11ed-4a7d-81cd-22c5e0ea6943",
+          "id": "557b4c8c-0103-488a-b685-dca8469f440e",
           "listId": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
-          "title": "04 - cadastrar e editar diretores",
+          "title": "06 - cadastrar e editar filmes",
           "description": "",
           "labels": [],
           "checkboxes": [],
@@ -70,6 +52,24 @@
       "id": "7323942c-31a0-4413-9dcd-655ed4605681",
       "title": "✅ Done",
       "cards": [
+        {
+          "id": "54426f24-eba7-4977-a2a3-fec8b0ba9f0a",
+          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
+          "title": "05 - ver uma listagem de todos os diretores",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "6f046b6b-11ed-4a7d-81cd-22c5e0ea6943",
+          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
+          "title": "04 - cadastrar e editar diretores",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "93aeacc1-c7d2-4d43-a676-e5c5854b9200",
           "listId": "7323942c-31a0-4413-9dcd-655ed4605681",

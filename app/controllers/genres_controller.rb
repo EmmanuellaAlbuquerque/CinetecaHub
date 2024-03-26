@@ -7,7 +7,7 @@ class GenresController < ApplicationController
     @genre = Genre.new(name: params[:genre][:name])
 
     if @genre.save()
-      return redirect_to genres_path()
+      return redirect_to genres_path
     end
 
     render :new
