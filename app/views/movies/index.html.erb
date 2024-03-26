@@ -1,7 +1,8 @@
 <h1>Listando os Filmes</h1>
 
 <% @movies.each do | movie | %>
-  <%= movie.title %>
-  <%= movie.year_of_release %>
-  <%= link_to 'Editar', edit_movie_path(movie), method: :put %>
+  <%= link_to movie_path(movie), method: :get do %>
+    <%= movie.title %>
+    <%= movie.year_of_release %>
+  <% end %>
 <% end %>

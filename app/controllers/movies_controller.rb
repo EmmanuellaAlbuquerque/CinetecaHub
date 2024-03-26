@@ -36,4 +36,8 @@ class MoviesController < ApplicationController
     render :edit
   end
 
+  def show
+    @movie = Movie.find(params[:id])
+  end
+
 end
