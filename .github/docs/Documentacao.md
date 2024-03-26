@@ -29,3 +29,8 @@
   rails generate migration change_year_of_release_column_to_integer
   rails db:migrate
 ```
+
+```sh
+  rails generate migration add_columns_to_movie released:boolean
+  rails db:migrate
+```

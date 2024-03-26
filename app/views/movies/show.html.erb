@@ -3,6 +3,7 @@
 <%= link_to 'Editar', edit_movie_path(@movie), method: :put %>
 
 <h3>Ano de Lançamento: <%= @movie.year_of_release %></h3>
+<h3>Status de lançamento: <%= @movie.released %></h3>
 <h3>Sinopse: <%= @movie.synopsis %></h3>
 <h3>País de Origem: <%= @movie.made_in %></h3>
 <h3>Duração (em min): <%= @movie.duration %></h3>

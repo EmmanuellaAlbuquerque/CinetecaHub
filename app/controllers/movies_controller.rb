@@ -1,7 +1,14 @@
 class MoviesController < ApplicationController
 
   def movie_params
-    params.require(:movie).permit(:title, :year_of_release, :synopsis, :made_in, :duration, :genre_id, :director_id)
+    params.require(:movie).permit(:title, :year_of_release, :synopsis, :made_in, :duration, :genre_id, :director_id).tap do | tap_params |
+
+      if tap_params[:year_of_release].to_i <= Date.today.year
+        tap_params[:released] = true
+      else
+        tap_params[:released] = false
+      end
+    end
   end
 
   def new
