@@ -1,0 +1,6 @@
+<h1>Listando os Filmes</h1>
+
+<% @movies.each do | movie | %>
+  <%= movie.title %>
+  <%= link_to 'Editar', edit_movie_path(movie), method: :put %>
+<% end %>

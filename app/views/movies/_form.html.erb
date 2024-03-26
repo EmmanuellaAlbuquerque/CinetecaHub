@@ -1,0 +1,32 @@
+<% current_year = Date.today.year %>
+<% hundred_years_ago = (current_year - 100) %>
+<% ten_years_from_now = (current_year + 10) %>
+
+<%= form_with model: movie do | f | %>
+  <%= f.label :title, 'Título' %>
+  <%= f.text_field :title %>
+
+  <%= f.label :year_of_release, 'Ano de Lançamento'  %>
+  <%= f.select :year_of_release, 
+               options_for_select(hundred_years_ago..ten_years_from_now, 
+              selected: current_year) 
+  %>
+
+  <%= f.label :synopsis, 'Sinopse' %>
+  <%= f.text_field :synopsis %>
+
+  <%= f.label :made_in, 'País de Origem' %>
+  <%= f.text_field :made_in %>
+
+  <%= f.label :duration, 'Duração' %>
+  <%= f.number_field :duration %>
+
+  <%= f.label :genre_id, 'Gênero' %>
+  <%= f.collection_select :genre_id, Genre.all, :id, :name %>
+
+  <%= f.label :director_id, 'Diretor' %>
+  <%= f.collection_select :director_id, Director.all, :id, :name %>
+
+  <%= f.submit 'Salvar' %>
+
+<% end %>

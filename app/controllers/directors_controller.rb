@@ -11,7 +11,7 @@ class DirectorsController < ApplicationController
   def create
     @director = Director.new(director_params)
 
-    if @director.save()
+    if @director.save
       return redirect_to directors_path
     end
 
