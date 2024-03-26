@@ -1,4 +1,4 @@
-<% current_year = Date.today.year %>
+<% current_year = Date.today.year.to_i %>
 <% hundred_years_ago = (current_year - 100) %>
 <% ten_years_from_now = (current_year + 10) %>
 
@@ -9,7 +9,7 @@
   <%= f.label :year_of_release, 'Ano de Lançamento'  %>
   <%= f.select :year_of_release, 
                options_for_select(hundred_years_ago..ten_years_from_now, 
-              selected: current_year) 
+              selected: (@movie.year_of_release || current_year) ) 
   %>
 
   <%= f.label :synopsis, 'Sinopse' %>
