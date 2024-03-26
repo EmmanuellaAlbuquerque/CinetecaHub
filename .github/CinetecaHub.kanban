@@ -8,22 +8,21 @@
     {
       "id": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
       "title": "🛠️👩🏻‍💻 Doing",
-      "cards": [
-        {
-          "id": "2e93b814-27ac-44f6-8b9a-fa2bdd0be4b6",
-          "listId": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
-          "title": "ao entrar na tela de detalhes de um(a) diretor(a), ver todos os filmes dirigidos por esta pessoa",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        }
-      ]
+      "cards": []
     },
     {
       "id": "7323942c-31a0-4413-9dcd-655ed4605681",
       "title": "✅ Done",
       "cards": [
+        {
+          "id": "2e93b814-27ac-44f6-8b9a-fa2bdd0be4b6",
+          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
+          "title": "ao entrar na tela de detalhes de um(a) diretor(a), ver todos os filmes dirigidos por esta pessoa",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "0e3d8d05-169d-4f0a-b220-4770e0c137b9",
           "listId": "7323942c-31a0-4413-9dcd-655ed4605681",

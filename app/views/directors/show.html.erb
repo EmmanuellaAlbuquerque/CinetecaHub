@@ -2,3 +2,8 @@
 <h3>Nacionalidade: <%= @director.nationality %></h3>
 <h3>Data de nascimento: <%= @director.birth_date %></h3>
 <h3>Gênero Favorito: <%= @director.genre.name %></h3>
+
+<% @movies.each do | movie | %>
+  <%= movie.title %>
+  <%= link_to 'Detalhes', movie_path(movie) %>
+<% end %>
