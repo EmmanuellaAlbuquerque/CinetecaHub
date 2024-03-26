@@ -3,4 +3,5 @@
 <% @directors.each do | director | %>
   <%= director.name %>
   <%= link_to 'Editar', edit_director_path(director), method: :put %>
+  <%= link_to 'Detalhes', director_path(director) %>
 <% end %>

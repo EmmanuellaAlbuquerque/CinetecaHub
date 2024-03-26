@@ -36,4 +36,8 @@ class DirectorsController < ApplicationController
     render :edit
   end
 
+  def show
+    @director = Director.find(params[:id])
+  end
+
 end
