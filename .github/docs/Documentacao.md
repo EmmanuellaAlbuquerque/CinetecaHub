@@ -24,3 +24,8 @@
   rails routes -g directors
   rails routes -g movies
 ```
+
+```sh
+  rails generate migration change_year_of_release_column_to_integer
+  rails db:migrate
+```
