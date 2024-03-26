@@ -3,7 +3,35 @@
     {
       "id": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
       "title": "🗃️ Backlog",
-      "cards": []
+      "cards": [
+        {
+          "id": "9c1ed64a-aff4-4ee3-8cc3-31cd795ba72d",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Extra - Separar os filmes entre \"já lançados\" e \"a ser lançado\" e permitir que os usuários vejam esta informação tanto na listagem quanto na tela de detalhes de um filme.",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "45979f92-512a-4828-9c8b-827d0d236a32",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Extra - Permitir que o cadastro de um filme seja marcado como \"rascunho\" e só exibir o filme caso ele não esteja com esta marcação.",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "af1dc298-33de-47f8-965f-26cacc9d9136",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Extra - Permitir o cadastro de uma imagem do pôster de cada filme e exibir esta imagem na listagem e na tela de detalhes de um filme.",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
     },
     {
       "id": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
@@ -17,7 +45,7 @@
         {
           "id": "2e93b814-27ac-44f6-8b9a-fa2bdd0be4b6",
           "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
-          "title": "ao entrar na tela de detalhes de um(a) diretor(a), ver todos os filmes dirigidos por esta pessoa",
+          "title": "10 - ao entrar na tela de detalhes de um(a) diretor(a), ver todos os filmes dirigidos por esta pessoa",
           "description": "",
           "labels": [],
           "checkboxes": [],
