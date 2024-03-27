@@ -1,3 +1,13 @@
-<h1>Listando os Filmes</h1>
+<h1>CinetecaHub</h1>
+
+<%= link_to 'Cadastre um Gênero', new_genre_path %>
+<%= link_to 'Listar os Gêneros', genres_path %>
+
+<%= link_to 'Cadastre um Diretor', new_director_path %>
+<%= link_to 'Listar os Diretores', directors_path %>
+
+<%= link_to 'Cadastre um Filme', new_movie_path %>
+
+<h2>Listando os Filmes</h2>
 
 <% render_movies_section(@published_movies) %>
