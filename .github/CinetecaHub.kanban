@@ -3,7 +3,17 @@
     {
       "id": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
       "title": "🗃️ Backlog",
-      "cards": []
+      "cards": [
+        {
+          "id": "ec4a739a-38c3-432f-972d-ddf3e82cefde",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Adicionar SASS ao projeto",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
     },
     {
       "id": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
