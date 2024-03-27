@@ -3,6 +3,13 @@
 <% ten_years_from_now = (current_year + 10) %>
 
 <%= form_with model: movie do | f | %>
+  <% if @movie.poster.attached? %>
+    <p>Arquivo antigo: <%= @movie.poster.filename %></p>
+  <% end %>
+
+  <%= f.label :poster, "Imagem do Pôster" %>
+  <%= f.file_field :poster %>
+
   <%= f.label :title, 'Título' %>
   <%= f.text_field :title %>
 

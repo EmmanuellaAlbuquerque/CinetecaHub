@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
 
   def movie_params
-    params.require(:movie).permit(:title, :year_of_release, :synopsis, :made_in, :duration, :genre_id, :director_id, :status).tap do | tap_params |
+    params.require(:movie).permit(:title, :year_of_release, :synopsis, :made_in, :duration, :genre_id, :director_id, :status, :poster).tap do | tap_params |
 
       tap_params[:status] = tap_params[:status].to_i
 
@@ -37,6 +37,11 @@ class MoviesController < ApplicationController
 
   def update
     @movie = Movie.find(params[:id])
+
+    if params[:movie][:poster].present?
+      @movie.poster.purge_later if @movie.poster.attached?
+      @movie.poster.attach(params[:movie][:poster])
+    end
 
     if @movie.update(movie_params)
       return redirect_to movies_path

@@ -39,3 +39,9 @@
   rails generate migration add_column_draft_to_movie draft:integer
   rails db:migrate
 ```
+
+
+```sh
+  rails active_storage:install
+  rails db:migrate
+```

@@ -5,4 +5,6 @@ class Movie < ApplicationRecord
   enum released: { "Já foi lançado": true, "Não foi lançado": false }
 
   enum status: { draft: 1, published: 0 }
+
+  has_one_attached :poster
 end

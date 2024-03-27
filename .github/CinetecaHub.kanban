@@ -8,22 +8,21 @@
     {
       "id": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
       "title": "🛠️👩🏻‍💻 Doing",
-      "cards": [
-        {
-          "id": "af1dc298-33de-47f8-965f-26cacc9d9136",
-          "listId": "110e99a5-cead-4cc9-b22e-b397b2a6692e",
-          "title": "Extra - Permitir o cadastro de uma imagem do pôster de cada filme e exibir esta imagem na listagem e na tela de detalhes de um filme.",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        }
-      ]
+      "cards": []
     },
     {
       "id": "7323942c-31a0-4413-9dcd-655ed4605681",
       "title": "✅ Done",
       "cards": [
+        {
+          "id": "af1dc298-33de-47f8-965f-26cacc9d9136",
+          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
+          "title": "Extra - Permitir o cadastro de uma imagem do pôster de cada filme e exibir esta imagem na listagem e na tela de detalhes de um filme.",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "45979f92-512a-4828-9c8b-827d0d236a32",
           "listId": "7323942c-31a0-4413-9dcd-655ed4605681",

@@ -2,6 +2,8 @@
 
 <%= link_to 'Editar', edit_movie_path(@movie), method: :put %>
 
+<%= image_tag @movie.poster if @movie.poster.attached? %>
+
 <h3>Ano de Lançamento: <%= @movie.year_of_release %></h3>
 <h3>Status de lançamento: <%= @movie.released %></h3>
 <h3>Sinopse: <%= @movie.synopsis %></h3>
