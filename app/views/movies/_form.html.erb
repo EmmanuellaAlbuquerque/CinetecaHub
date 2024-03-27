@@ -27,6 +27,9 @@
   <%= f.label :director_id, 'Diretor' %>
   <%= f.collection_select :director_id, Director.all, :id, :name %>
 
+  <%= f.label :status, 'Manter como rascunho?' %>
+  <%= f.check_box :status, { checked: @movie.status == 'draft' }%>
+
   <%= f.submit 'Salvar' %>
 
 <% end %>

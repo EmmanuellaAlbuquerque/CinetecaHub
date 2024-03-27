@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   resources :genres
   resources :directors
-  resources :movies
+
+  resources :movies do
+    patch :publish, on: :member
+  end
 
   # Defines the root path route ("/")
   # root "posts#index"

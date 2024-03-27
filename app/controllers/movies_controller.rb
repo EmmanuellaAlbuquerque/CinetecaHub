@@ -1,7 +1,9 @@
 class MoviesController < ApplicationController
 
   def movie_params
-    params.require(:movie).permit(:title, :year_of_release, :synopsis, :made_in, :duration, :genre_id, :director_id).tap do | tap_params |
+    params.require(:movie).permit(:title, :year_of_release, :synopsis, :made_in, :duration, :genre_id, :director_id, :status).tap do | tap_params |
+
+      tap_params[:status] = tap_params[:status].to_i
 
       if tap_params[:year_of_release].to_i <= Date.today.year
         tap_params[:released] = true
@@ -26,7 +28,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all
+    @published_movies = Movie.published
   end
 
   def edit
@@ -45,6 +47,12 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+  end
+
+  def publish
+    movie = Movie.find(params[:id])
+    movie.published!
+    redirect_to movie_path(movie.id)
   end
 
 end

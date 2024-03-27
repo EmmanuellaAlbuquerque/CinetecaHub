@@ -34,3 +34,8 @@
   rails generate migration add_columns_to_movie released:boolean
   rails db:migrate
 ```
+
+```sh
+  rails generate migration add_column_draft_to_movie draft:integer
+  rails db:migrate
+```

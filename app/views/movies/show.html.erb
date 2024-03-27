@@ -9,3 +9,7 @@
 <h3>Duração (em min): <%= @movie.duration %></h3>
 <h3>Gênero: <%= @movie.genre.name %></h3>
 <h3>Diretor: <%= @movie.director.name %></h3>
+
+<% if @movie.status == 'draft' %>
+  <%= button_to 'Publicar rascunho', publish_movie_path, { method: 'patch' } %>
+<% end %>
