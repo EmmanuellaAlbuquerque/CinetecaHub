@@ -1,0 +1,91 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+.form {
+  @include flexCenter;
+  // background-color: red;
+
+  form {
+    // background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    label {
+      margin-top: 32px;
+      margin-bottom: 5px;
+      font-size: 1.2rem;
+    }
+
+    input {
+      padding: 18px 24px;
+      height: 3.5rem;
+
+      margin-top: 10px;
+      border-radius: 8px;
+      font-size: 1rem;
+      border: none;;
+    }
+
+    select {
+      padding: 18px 24px;
+      height: 3.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: 3px solid $glass-color;
+    }
+
+    #old_archive {
+      margin-top: 30px;
+    }
+
+    #image_upload {
+      background-color: #be1528;
+      @include flexCenter;
+      border-radius: 8px;
+      margin-top: 1rem;
+
+      span {
+        font-size: 3em;
+        margin-top: 1rem;
+      }
+    }
+    
+    input[type=text] {
+      border: 3px solid $glass-color;
+    }
+
+    input[type=file] {
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type=checkbox] {
+      cursor: pointer;
+      align-self: start;
+      height: 2rem;
+      width: 2rem;
+    }
+
+    input[type=text]:hover, select:hover {
+      outline: 3px solid #be1528;
+    }
+
+    input[type=submit] {
+      cursor: pointer;
+      background-color: transparent;
+      color: #fff;
+      font-weight: 700;
+      outline: 2px solid #be1528;
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+
+    input[type=submit]:hover {
+      background-color: #be1528;
+      color: #fff;
+    }
+  }
+}
+

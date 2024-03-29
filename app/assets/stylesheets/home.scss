@@ -1,0 +1,70 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+.content {
+  @include flexCenter;
+}
+
+#home {
+  #catalogue {
+    align-self: flex-start;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+#home #movies_wrapper {
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: 70%;
+
+  #link_movie_card {
+    @include flexCenter;
+    width: 320px;
+    height: 500px;
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 300;
+    cursor: pointer;
+
+    #title {
+      color: #fff;
+      font-weight: bolder;
+      padding-top: 10px;
+    }
+
+    #movie_info_wrapper {
+      position: absolute;
+      bottom: 40px;
+      color: #fff;
+
+      width: 90%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .info_item {
+      backdrop-filter: blur(20px);
+      border-radius: 8px;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.18);
+    }
+
+    #year {
+    }
+
+    #status {
+    }
+  }
+
+  #poster {
+    border-radius: 8px;
+    width: 320px;
+    height: 500px;
+    object-fit: cover;
+  }
+}

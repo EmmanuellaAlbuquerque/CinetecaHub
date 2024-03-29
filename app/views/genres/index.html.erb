@@ -1,7 +1,11 @@
-<h1>Listando os Gêneros</h1>
+<div class="content">
+  <h1>Gêneros Cadastrados</h1>
 
-<% @genres.each do | genre | %>
-  <%= genre.name %>
-  <%= link_to 'Editar', edit_genre_path(genre), method: :put %>
-  <%= link_to 'Ver detalhes', genre_path(genre) %>
-<% end %>
+  <% @genres.each do | genre | %>
+    <div id="info_wrapper">
+      <strong><%= genre.name %></strong>
+      <%= link_to 'Editar', edit_genre_path(genre), method: :put %>
+      <%= link_to 'Ver detalhes', genre_path(genre) %>
+    </div>
+  <% end %>  
+</div>

@@ -1,3 +1,7 @@
-<h1>Registre um Gênero</h1>
+<%= stylesheet_link_tag "form", "data-turbo-track": "reload" %>
 
-<%= render partial: 'form', locals: { genre: @genre } %>
+<div class="form">
+  <h1>Cadastre um novo Gênero</h1>
+
+  <%= render partial: 'form', locals: { genre: @genre } %>
+</div>

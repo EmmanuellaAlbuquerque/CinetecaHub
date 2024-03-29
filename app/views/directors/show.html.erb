@@ -1,9 +1,37 @@
-<h1><%= @director.name %></h1>
-<h3>Nacionalidade: <%= @director.nationality %></h3>
-<h3>Data de nascimento: <%= @director.birth_date %></h3>
-<h3>Gênero Favorito: <%= @director.genre.name %></h3>
+<div class="content">
+  <div id="details_info_wrapper">
+    <h1><%= @director.name %></h1>      
 
-<% @movies.each do | movie | %>
-  <%= movie.title %>
-  <%= link_to 'Detalhes', movie_path(movie) %>
-<% end %>
+    <div id="details_info_item">
+      <p><strong>Nacionalidade:</strong> <%= @director.nationality %></p>
+    </div>
+
+    <div id="details_info_item">
+      <p><strong>Data de nascimento:</strong> <%= @director.birth_date %></p>
+    </div>
+
+    <div id="details_info_item">
+      <p><strong>Gênero Favorito:</strong> <%= @director.genre.name %></p>
+    </div>    
+  </div>
+
+  <h2 id="title_movies">Filmes dirigidos pelo Diretor(a)</h2>
+  
+  <div id="director_movies_wrapper">
+
+    <% @movies.each do | movie | %>
+      <div id="movies_of_director">
+        <% if movie.poster.attached? %>
+          <%= image_tag movie.poster, id: 'poster', alt: "Pôster do Filme #{movie.title}" %>
+        <% else %>
+          <div id="placeholder_image">
+            <p>
+              <%= movie.title %>
+            </p>
+          </div>
+        <% end %>
+        <%= link_to 'Detalhes', movie_path(movie) %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -12,6 +12,53 @@
           "labels": [],
           "checkboxes": [],
           "comments": []
+        },
+        {
+          "id": "af1dc298-33de-47f8-965f-26cacc9d9136",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Extra - Permitir o cadastro de uma imagem do pôster de cada filme e exibir esta imagem na listagem e na tela de detalhes de um filme.",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "faece343-8386-48c4-b629-cdef83bd0019",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Criar Header, ele deve ter todos os links úteis",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "e85f8f9b-31db-4b2f-9ee0-ff284ea303e0",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Definindo Design",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "5e769d57-3002-4cd0-8938-d38ddbbd4eab",
+              "title": "Definir design",
+              "checked": false
+            },
+            {
+              "id": "7a8aabe6-1296-4bf3-adad-513441e23945",
+              "title": "Definir font",
+              "checked": false
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "bd6de99d-05d4-4c77-98fa-117b30b7d88c",
+          "listId": "944ae4d6-b628-444f-bfe5-1d3a56f71d22",
+          "title": "Verificar Mobile ",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
         }
       ]
     },
@@ -24,15 +71,6 @@
       "id": "7323942c-31a0-4413-9dcd-655ed4605681",
       "title": "✅ Done",
       "cards": [
-        {
-          "id": "af1dc298-33de-47f8-965f-26cacc9d9136",
-          "listId": "7323942c-31a0-4413-9dcd-655ed4605681",
-          "title": "Extra - Permitir o cadastro de uma imagem do pôster de cada filme e exibir esta imagem na listagem e na tela de detalhes de um filme.",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
         {
           "id": "45979f92-512a-4828-9c8b-827d0d236a32",
           "listId": "7323942c-31a0-4413-9dcd-655ed4605681",

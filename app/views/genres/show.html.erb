@@ -1,10 +1,24 @@
-<h1>Detalhes do Gênero: <%= @genre.name %></h1>
+<div class="content">
+  <h1 id="title_movies">Detalhes do Gênero: <%= @genre.name %></h1>
 
-<% if @movies.length == 0 %>
-  <h3>Não existem filmes associados ao gênero!</h3>
-<% end %>
+  <% if @movies.length == 0 %>
+    <h3>Não existem filmes associados ao gênero!</h3>
+  <% end %>
 
-<% @movies.each do | movie | %>
-  <%= movie.title %>
-  <%= link_to 'Detalhes', movie_path(movie) %>
-<% end %>
+  <div id="director_movies_wrapper">
+    <% @movies.each do | movie | %>
+      <div id="movies_of_director">
+        <% if movie.poster.attached? %>
+          <%= image_tag movie.poster, id: 'poster', alt: "Pôster do Filme #{movie.title}" %>
+        <% else %>
+          <div id="placeholder_image">
+            <p>
+              <%= movie.title %>
+            </p>
+          </div>
+        <% end %>
+        <%= link_to 'Detalhes', movie_path(movie) %>
+      </div>
+    <% end %>
+  </div>
+</div>

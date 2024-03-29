@@ -1,9 +1,9 @@
 <%= form_with model: director do | f | %>
   <%= f.label :name, 'Nome' %>
-  <%=  f.text_field :name %>
+  <%=  f.text_field :name, placeholder: 'Digite o nome do diretor' %>
 
   <%= f.label :nationality, 'Nacionalidade' %>
-  <%= f.text_field :nationality %>
+  <%= f.text_field :nationality, placeholder: 'Digite a nacionalidade do diretor' %>
   
   <%= f.label :birth_date, 'Data de nascimento' %>
   <%= f.date_field :birth_date %>

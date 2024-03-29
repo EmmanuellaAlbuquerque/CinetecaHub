@@ -3,11 +3,18 @@ module MoviesHelper
     return unless movies.any?
 
     movies.each do | movie |
-      concat("<a href='#{movie_path(movie)}'>
-      #{movie.title}
-      #{movie.year_of_release}
-      #{movie.released}
-      <br/>
+      concat("<a id='link_movie_card' href='#{movie_path(movie)}'>
+      #{
+        if movie.poster.attached?
+          "<img src='#{url_for(movie.poster)}' id='poster' alt='Pôster do Filme #{movie.title}' />"
+        end
+      }
+      <div id='movie_info_wrapper'>
+        <span id='year' class='info_item'>#{movie.year_of_release}</span>
+        <span id='status' class='info_item'>#{movie.released}</span>
+      </div>
+      
+      <p id='title'>#{movie.title}</p>
       </a>".html_safe)
     end
   end

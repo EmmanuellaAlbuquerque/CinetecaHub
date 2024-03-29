@@ -1,7 +1,11 @@
-<h1>Listando os Diretores</h1>
+<div class="content">
+  <h1>Listando os Diretores</h1>
 
-<% @directors.each do | director | %>
-  <%= director.name %>
-  <%= link_to 'Editar', edit_director_path(director), method: :put %>
-  <%= link_to 'Detalhes', director_path(director) %>
-<% end %>
+  <% @directors.each do | director | %>
+    <div id="info_wrapper">
+      <strong><%= director.name %></strong>
+      <%= link_to 'Editar', edit_director_path(director), method: :put %>
+      <%= link_to 'Detalhes', director_path(director) %>
+    </div>
+  <% end %>
+</div>

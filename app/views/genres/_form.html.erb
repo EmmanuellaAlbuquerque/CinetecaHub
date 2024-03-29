@@ -1,5 +1,5 @@
 <%= form_with model: genre do | f | %>
   <%= f.label :name, 'Nome' %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, placeholder: 'Digite o nome do gênero' %>
   <%= f.submit 'Salvar' %>
 <% end %>
