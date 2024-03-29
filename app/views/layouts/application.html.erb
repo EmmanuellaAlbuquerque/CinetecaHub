@@ -10,6 +10,8 @@
     <%= javascript_importmap_tags %>
     <%= hotwire_livereload_tags if Rails.env.development? %>
 
+    <%= javascript_include_tag 'home' %>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,17 +22,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   </head>
 
   <body>
     <nav>
-      <div id="logo">
+      <a id="logo" href="<%= root_path %>">
         <h1>CinetecaHub</h1>
         <div id="ball"></div>
-      </div>
+      </a>
 
-      <ul>
+      <span id="hamburger_menu" onclick=openMenu() class="material-symbols-outlined">
+        menu
+      </span>
+
+      <span id="close_menu" onclick=closeMenu() class="material-symbols-outlined">
+        close
+      </span>      
+
+      <ul id="menu">
         
         <a href="<%= root_path %>">
           <li id="active">

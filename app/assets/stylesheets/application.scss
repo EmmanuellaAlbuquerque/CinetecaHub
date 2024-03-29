@@ -126,6 +126,27 @@ nav {
       border-radius: 24px;
     }
   }
+
+  #hamburger_menu, #close_menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1500px) {
+    & {
+      justify-content: space-between;
+    }
+
+    ul {
+      display: none;
+      // flex-direction: column;
+
+    }
+
+    #hamburger_menu {
+      display: block;
+    }
+   }
 }
 
 .icon {
