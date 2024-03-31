@@ -171,6 +171,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 200px;
   
   width: 100%;
   padding: 50px;
@@ -205,4 +207,20 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.18);
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+#footer_logo_wrapper {
+  display: flex;
+  align-items: center;
+  
+  .ball {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    background-color: $secundary-color;
+    border-radius: 999999px;
+    align-self: flex-end;
+    margin-bottom: 6px;
+  }
+
 }
