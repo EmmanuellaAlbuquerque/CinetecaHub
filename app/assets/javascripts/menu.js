@@ -17,3 +17,17 @@ function closeMenu() {
   hamburgerMenu.style.display = "block";
   closeMenu.style.display = "none";
 }
+
+function setAsActive(link_hashtag) {
+  localStorage.setItem('active_link', link_hashtag);
+}
+
+function applyActiveState() {
+  let tag = localStorage.getItem('active_link');
+  let li_active = document.getElementById(tag);
+  li_active.id = 'active';
+}
+
+document.addEventListener("turbo:load", applyActiveState);
+
+setAsActive();

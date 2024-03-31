@@ -17,7 +17,7 @@
       font-size: 1.2rem;
     }
 
-    input {
+    input, textarea {
       padding: 18px 24px;
       height: 3.5rem;
 
@@ -34,6 +34,10 @@
       border-radius: 8px;
       font-size: 1rem;
       outline: 3px solid $glass-color;
+    }
+
+    textarea {
+      height: 10rem;
     }
 
     #old_archive {

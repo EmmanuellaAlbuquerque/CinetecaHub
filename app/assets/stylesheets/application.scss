@@ -38,6 +38,18 @@ a {
   color: #fff;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $secundary-color;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
 #logo {
   display: flex;
   cursor: pointer;

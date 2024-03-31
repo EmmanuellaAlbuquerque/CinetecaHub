@@ -18,7 +18,7 @@
 #home #movies_wrapper {
   display: grid;
   grid-gap: 5rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   width: 70%;
 
   #link_movie_card {
@@ -70,6 +70,8 @@
 
   #poster {
     border-radius: 8px;
+    min-width: 320px;
+    min-height: 500px;
     width: 320px;
     height: 500px;
     object-fit: cover;
