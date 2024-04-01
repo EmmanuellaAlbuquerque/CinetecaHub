@@ -12,7 +12,8 @@ class DirectorsController < ApplicationController
     @director = Director.new(director_params)
 
     if @director.save
-      return redirect_to directors_path
+      flash[:notice] = "O diretor #{@director.name} foi salvo!"
+      return redirect_to new_director_path
     end
 
     render :new

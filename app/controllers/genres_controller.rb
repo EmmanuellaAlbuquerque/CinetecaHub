@@ -7,7 +7,8 @@ class GenresController < ApplicationController
     @genre = Genre.new(name: params[:genre][:name])
 
     if @genre.save
-      return redirect_to genres_path
+      flash[:notice] = "O gênero #{@genre.name} foi salvo!"
+      return redirect_to new_genre_path
     end
 
     render :new

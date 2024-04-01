@@ -1,13 +1,31 @@
-<h1>CinetecaHub</h1>
+<%= stylesheet_link_tag "home", "data-turbo-track": "reload" %>
 
-<%= link_to 'Cadastre um Gênero', new_genre_path %>
-<%= link_to 'Listar os Gêneros', genres_path %>
+<div id="home" class="content">
+  <h2 id="catalogue">Catálogo</h2>
 
-<%= link_to 'Cadastre um Diretor', new_director_path %>
-<%= link_to 'Listar os Diretores', directors_path %>
+  <div id="movies_wrapper">
+    <% render_movies_section(@published_movies) %>
+  </div>
 
-<%= link_to 'Cadastre um Filme', new_movie_path %>
+  <footer>
+    <div>
+      <div id="footer_logo_wrapper"><h1>CinetecaHub</h1><div class="ball"></div></div>
+      <h2>Seu Catálogo de Filmes</h2>
+      <p>Made with ❤️ by Manu!</p>      
+    </div>
 
-<h2>Listando os Filmes</h2>
+    <div id="links_wrapper">
+      <a href="https://github.com/emmanuellaAlbuquerque" target="_blank">
+        <%= image_tag "github-mark.svg", class: "icon", alt: "Logo do Github" %>
+      </a>
 
-<% render_movies_section(@published_movies) %>
+      <a href="http://www.linkedin.com/in/emmanuella-albuquerque" target="_blank">
+        <%= image_tag "linkedin.png", class: "icon", alt: "Logo do Linkedin" %>
+      </a>      
+    </div>
+  </footer>
+
+  <div id="rights">
+    <p>&copy; 2024 CinetecaHub. Todos os direitos reservados.</p>
+  </div>
+</div>

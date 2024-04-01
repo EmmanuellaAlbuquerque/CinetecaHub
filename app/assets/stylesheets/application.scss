@@ -1,0 +1,226 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import './partials/variables';
+@import './partials/mixins';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  color: $primary-color;
+  background-color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $secundary-color;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  display: flex;
+  cursor: pointer;
+
+  #ball {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    background-color: $secundary-color;
+    border-radius: 999999px;
+    align-self: flex-end;
+    margin-bottom: 4px;
+  }
+
+  &:hover {
+    scale: (1.2);
+  }
+}
+
+#header-gap {
+  height: 200px;
+}
+
+nav {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  padding-left: 40px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+    }
+
+    li {
+      padding: 8px 30px;
+      border-radius: 24px;
+      @include flexCenter;
+
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        background-color: $glass-color;
+        transform: scaleX(0); 
+        transform-origin: left;
+        transition: transform 0.4s ease;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+      }
+
+      span {
+        margin-bottom: 10px;
+      }
+    }
+
+    #active {
+      background-color: $glass-color;
+      border-radius: 24px;
+    }
+  }
+
+  #hamburger_menu, #close_menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1500px) {
+    & {
+      justify-content: space-between;
+    }
+
+    ul {
+      display: none;
+      // flex-direction: column;
+
+    }
+
+    #hamburger_menu {
+      display: block;
+    }
+   }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 200px;
+  
+  width: 100%;
+  padding: 50px;
+  
+  h2 {
+    color: #8F9BA8;
+    font-weight: 300;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+  #links_wrapper {
+    @include flexCenter;
+  }
+
+  #links_wrapper a {
+    margin-top: 20px;
+    text-decoration: none;
+    transition: scale 0.4s ease;
+  }
+
+  #links_wrapper a:hover {
+    scale: 1.5;
+  }
+}
+
+#rights {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#footer_logo_wrapper {
+  display: flex;
+  align-items: center;
+  
+  .ball {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    background-color: $secundary-color;
+    border-radius: 999999px;
+    align-self: flex-end;
+    margin-bottom: 6px;
+  }
+
+}

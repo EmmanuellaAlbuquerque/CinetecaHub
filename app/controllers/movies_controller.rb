@@ -21,7 +21,8 @@ class MoviesController < ApplicationController
     @movie = Movie.new(movie_params)
 
     if @movie.save
-      return redirect_to movies_path
+      flash[:notice] = "O filme #{@movie.title} foi salvo!"
+      return redirect_to new_movie_path
     end
 
     render :new

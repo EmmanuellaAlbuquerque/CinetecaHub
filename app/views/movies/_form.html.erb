@@ -4,14 +4,21 @@
 
 <%= form_with model: movie do | f | %>
   <% if @movie.poster.attached? %>
-    <p>Arquivo antigo: <%= @movie.poster.filename %></p>
+    <p id="old_archive">Arquivo antigo: <%= @movie.poster.filename %></p>
   <% end %>
 
   <%= f.label :poster, "Imagem do Pôster" %>
-  <%= f.file_field :poster %>
+
+  <div id="image_upload">
+    <span class="material-symbols-outlined">
+      image_search
+    </span>
+
+    <%= f.file_field :poster %>
+  </div>
 
   <%= f.label :title, 'Título' %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, placeholder: 'Digite o título do filme' %>
 
   <%= f.label :year_of_release, 'Ano de Lançamento'  %>
   <%= f.select :year_of_release, 
@@ -20,13 +27,13 @@
   %>
 
   <%= f.label :synopsis, 'Sinopse' %>
-  <%= f.text_field :synopsis %>
+  <%= f.text_area :synopsis, placeholder: 'Digite a sinopse do filme' %>
 
   <%= f.label :made_in, 'País de Origem' %>
-  <%= f.text_field :made_in %>
+  <%= f.text_field :made_in, placeholder: 'Digite o país de origem do filme' %>
 
   <%= f.label :duration, 'Duração' %>
-  <%= f.number_field :duration %>
+  <%= f.number_field :duration, placeholder: 'Digite a duração do filme (em min)' %>
 
   <%= f.label :genre_id, 'Gênero' %>
   <%= f.collection_select :genre_id, Genre.all, :id, :name %>
