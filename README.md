@@ -1,8 +1,8 @@
 # CinetecaHub (Desafio Treina Dev)
 
-https://github.com/EmmanuellaAlbuquerque/CinetecaHub/assets/57198678/e0555bbd-b084-47dc-81a5-0292803378e1
-
 ![projeto](.github/assets/ProjectPoster.png)
+
+https://github.com/EmmanuellaAlbuquerque/CinetecaHub/assets/57198678/e0555bbd-b084-47dc-81a5-0292803378e1
 
 ## Escopo do projeto (Aplicação de catálogo de filmes)
 
@@ -12,7 +12,7 @@ A aplicação deverá ser capaz de gerenciar cadastros de gêneros de filmes (co
 
 Página Inicial |
 :---: |
-<img src=".github/assets/PaginaInicial.png" width = 500px> |
+<img src=".github/assets/PaginaInicial.png"> |
 
 Cadastrando um novo Filme |
 :---: |
@@ -20,7 +20,7 @@ Cadastrando um novo Filme |
 
 Detalhes de um Filme (Poster) |
 :---: |
-<img src=".github/assets/DetalhesDeUmFilme.png" width = 500px> |
+<img src=".github/assets/DetalhesDeUmFilme.png"> |
 
 Detalhes de um Filme (Dados) |
 :---: |
