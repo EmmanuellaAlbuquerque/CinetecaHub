@@ -88,6 +88,13 @@ Detalhes de um Diretor |
 |                  | PUT     | /genres/:id(.:format)          | genres#update                 |
 |                  | DELETE  | /genres/:id(.:format)          | genres#destroy                |
 
+## Diagrama Entidade-Relacionamento do projeto CinetecaHub
+
+![projeto](.github/assets/CinetecaHubERD.png)
+
+Você encontra o PDF abaixo:
+[PDF ERD (Gerado com rails-erd)](https://github.com/EmmanuellaAlbuquerque/CinetecaHub/blob/main/erd.pdf)
+
 ## Tecnologias utilizadas
 
 * Ruby version 3.0.0

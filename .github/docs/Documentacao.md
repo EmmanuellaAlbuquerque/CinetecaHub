@@ -88,3 +88,10 @@
   # inicia o servidor rails
   rails server
 ```
+
+## Gerando arquivo ERD (https://voormedia.github.io/rails-erd/install.html)
+
+```sh
+
+ rake erd
+```
