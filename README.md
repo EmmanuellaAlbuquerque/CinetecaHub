@@ -105,6 +105,31 @@ Você encontra o PDF abaixo:
   <img src=".github/assets/Techs.png" height=25 > 
 </p>
 
+## :rocket: Como rodar o projeto?
+
+```sh
+  # faça o clone do projeto
+  git clone git@github.com:EmmanuellaAlbuquerque/CinetecaHub.git
+
+  # entre na pasta do projeto
+  cd CinetecaHub
+
+  # instale as dependências do projeto
+  bundle install
+
+  # crie o banco
+  rails db:create
+
+  # e execute as migrations
+  rails db:migrate
+
+  # rode o servidor
+  rails server
+
+  # acesse o servidor em
+  http://localhost:3000
+```
+
 ## A documentação das tarefas do projeto, se encontram em: 
 [CinetecaHub.kanban](https://github.com/EmmanuellaAlbuquerque/CinetecaHub/blob/main/.github/CinetecaHub.kanban)
 * Foi utilizada a extensão **Portable Kanban** no VSCode 
